@@ -1,4 +1,43 @@
 h1 {
-    color: cornflowerblue;
+    color: gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
 }
+
+#section-0 div > img {
+    width: 250px;
+}
+
+#section-1 div > img {
+    width: 350px;
+}
+
+#section-2 div > img {
+    width: 500px;
+}
+
+input {
+    display: none;
+  }
+  
+  section > div {
+    display: none;
+  }
+  
+  #radio-section-0:checked ~ #section-0 > div {
+    display: block;    
+  }
+
+  #radio-section-1:checked ~ #section-1 > div {
+    display: block;    
+  }
+  
+  #radio-section-2:checked ~ #section-2 > div {
+    display: block;    
+  }
+
+  @media print {
+      @page {
+          size: letter;
+      }
+  }
